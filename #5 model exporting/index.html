@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Train Model</title></head>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<body>
+    <a-scene>
+        <a-assets>
+            <a-item-asset src="/Train model/tinker.obj" id="train-obj"></a-item-asset>
+            <a-item-asset src="/Train model/obj.mtl" id="train-mtl"></a-item-asset>
+        </a-assets>
+        <a-entity>
+            <a-box position="0 5 -5.8" width="40" height="9"src="background.png" ></a-box>
+            <!-- <a-box position="0 0 -5.8" color="red" width="40" height="10"></a-box> -->
+            <a-plane position="0 1 -3" rotation="-90 0 0" width="100%" height="1" color="#7BC8A4" src="track.jpg"></a-plane>
+        </a-entity>
+        <a-entity obj-model="obj:#train-obj; mtl:#train-mtl" position="0 1.2 -2.7 0 " rotation="-90 0 0 0" scale="0.02 0.02 0.02"></a-entity>
+
+    </a-scene>
+</body>
+</html>
